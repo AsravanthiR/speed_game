@@ -1,13 +1,97 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto:wght@300;500&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Road Rage", cursive;
+  text-align: center;
+  font-size: 50px;
+}
+body {
+  font-family: "Road Rage", cursive;
+  background-image: linear-gradient(yellow, rgb(70, 80, 175));
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  text-align: center;
+  font-size: 25px;
+}
+input[type="submit"] {
+  font-family: "Road Rage", cursive;
+}
+button {
+  background-color: rgb(179, 190, 158);
+  color: black;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.9rem;
+  display: flex;
+
+  cursor: pointer;
+  position: relative;
+  margin: 1rem;
+  justify-content: center;
+}
+.circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  box-shadow: orangered;
+}
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.circle:active {
+  box-shadow: inset 0 0 40px rgb(96, 96, 96);
+}
+.active {
+  box-shadow: 0 0 25px orange;
+  border: 25px solid orangered;
+  background-image: url(assets/images/angry.svg);
+}
+.overLay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.gameOverBox {
+  background: white;
+  padding: 1rem;
+  width: 40%;
+  min-height: 25%;
+  border-radius: 5px;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.gameOverBox button {
+  background: rgb(189, 147, 147);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
 }
