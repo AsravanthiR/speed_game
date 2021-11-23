@@ -8,8 +8,8 @@
 # testing
 /coverage
 
-# production
-/build
+# Allow build folder for pages
+#/build
 
 # misc
 .DS_Store
