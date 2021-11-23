@@ -1,7 +1,4 @@
 import React from "react";
-const closeHandler = () => {
-  window.location.reload();
-};
 
 const GameOver = (props) => {
   return (
